@@ -1,14 +1,17 @@
 body {
-    background: linear-gradient(141deg, #252525 0%, #393a3a 51%, #323435 75%);
+    background: linear-gradient(150deg, #252525 30%, #393a3a 40%, #323435 50%); 
+    opacity: 0.95;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.item {
+/* .item {
     border: 1px solid #20b9b9;
-}
+} */
 
 .c-nav ul, .c-nav-link ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 10px;
     overflow: hidden; 
   }
@@ -17,7 +20,7 @@ body {
     float: left;
     font-size: 17px;
     /* color: white; */
-    font-family: 'Ubuntu', sans-serif; 
+    font-family: 'Ubuntu Condensed', sans-serif;
   }
   
   /* .c-nav ul li:hover {
@@ -29,6 +32,7 @@ body {
     text-align: center;
     padding: 14px 15px;
     text-decoration: none; 
+    font-family: 'Acme', sans-serif;
   }
   
   .c-navigation {
@@ -36,7 +40,33 @@ body {
     background-color: #0297ee; 
     display: flex;
     flex-direction: row;
-    box-shadow: 0 4px 8px 0 #014c77, 0 6px 20px 0 #014c77;
+    box-shadow: 0 4px 8px 0 #38b6ff, 0 6px 20px 0 #38b6ff;
+    border-radius: 20px;
+  }
+
+  .title-card {
+    flex: .5;
+    text-align: center;
+    color: white;
+    font-family: 'Acme', sans-serif;
+  }
+
+  .c-nav {
+    display: flex;
+    flex-direction: row;
+    flex: .5;
+  }
+
+  .c-nav, .c-nav-link {
+    float: left;
+    top: 20px; 
+    justify-content: flex-end;
+}
+
+  .c-nav .c-link {
+    /* background-color: #0CCC67; */
+    margin-left: 15px;
+    border: 1px solid white;
   }
   
   .c-link {
@@ -50,7 +80,7 @@ body {
   }
   
   .c-nav .c-link *:hover {
-    background-color: #0ef178;
+    background-color: #5e6461;
   }
   
   .c-link *:hover {
@@ -102,11 +132,103 @@ body {
   }
   
   .dropdown-content a:hover {
-    background-color: #0CCC67; 
+    background-color: #5e6461; 
   }
 
   .show {
     display: block;
+  }
+
+  .container {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .greeting {
+    color: white;
+    font-family: 'Acme', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .greeting h1 {
+    padding: 10px;
+    flex: .7;
+    text-shadow: 0 0 20px #38b6ff;
+  }
+
+  .profile-pic {
+    flex: .3;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #0297ee;
+    box-shadow: 0 4px 8px 0 #38b6ff, 0 6px 20px 0 #38b6ff;
+  }
+
+  .description {
+    color: white;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-shadow: 0 0 10px #38b6ff;
+  }
+
+  .description h3 {
+    padding: 10px;
+  }
+
+  hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 75%;
+    box-shadow: 0px 2px 16px 0px #38b6ff; 
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .social-media-icons * {
+    margin: 5px;
+  }
+
+  .follow-me {
+    color: white;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    text-shadow: 0 0 50px #38b6ff;
+  }
+
+  .media {
+    height: 75px;
+    width: 75px;
   }
 
   @media all and (max-width: 900px) {
