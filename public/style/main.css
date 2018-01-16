@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(150deg, #292929 30%, #393a3a 40%, #323435 50%); 
+    background: linear-gradient(150deg, #292929 30%, #464747 40%, #3c3e3f 50%); 
     opacity: 0.95;
     max-height: 100%;
     max-width: 100%;
@@ -248,5 +248,9 @@ body {
 
     .c-dropdown {
         display: inline-block;
+    }
+
+    .greeting h1 {
+      float: left;
     }
   }
