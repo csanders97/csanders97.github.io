@@ -1,0 +1,94 @@
+//- <!DOCTYPE html>
+//- <html>
+//-     <head>
+//-         <title>Caleb Sanders - Portfilio</title>
+//-         <link href="public/style/main.css" rel="stylesheet" type="text/css">
+//-         <link href="https://fonts.googleapis.com/css?family=Acme|Ubuntu+Condensed" rel="stylesheet">
+//-         <div class="c-navigation item">
+//-             <h1 class="title-card item">CSS Original</h1>
+//-             <nav class="c-nav item">
+//-                 <ul>
+//-                     <li class="c-link item"><a href="#">Home</a></li>
+//-                     <li class="c-link item"><a href="#">About</a></li>
+//-                     <li class="c-link item"><a href="#">Work</a></li>
+//-                     <li class="c-link item"><a href="#">Resume</a></li>
+//-                     <li class="c-link item"><a href="#">Contact</a></li>
+//-                 </ul>
+//-             </nav>
+//-             <div class="c-dropdown">
+//-                 <button onclick="dropDwn()" class="dropbtn">
+//-                     <div class="hamburger"></div>
+//-                     <div class="hamburger"></div>
+//-                     <div class="hamburger"></div>
+//-                 </button>
+//-             </div>
+//-             <div id="Dropdown" class="dropdown-content">
+//-                 <a href="#">Home</a>
+//-                 <a href="#">About</a>
+//-                 <a href="#">Work</a>
+//-                 <a href="#">Resume</a>
+//-                 <a href="#">Contact</a>
+//-             </div>
+//-         </div>
+//-     </head>
+//-     <body>
+//-         <div class="container item">
+//-             <div class="greeting item">
+//-                 <h1 class="item">Hello! My name is Caleb Sanders</h1>
+//-                 <div class="profile-pic item">
+//-                     <img class="pic item" src="public/images/profile.JPG">
+//-                 </div>
+//-             </div>
+//-             <div class="description item">
+//-                 <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+//-                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+//-                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+//-                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+//-                 </h3>
+//-             </div>
+//-         </div>
+//-         <script src="javascript/dropdown.js"></script>
+//-     </body>
+//-     <footer>
+//-         <hr>
+//-         <div class="follow-me item">
+//-             <h2>Follow me on social media!</h2>
+//-         </div>
+//-         <div class="social-media item">
+//-             <div class="social-media-icons">
+//-                 <div class="linkedIn item">
+//-                     <a href="https://www.linkedin.com/in/caleb-sanders-wd/" target="_blank">
+//-                         <img class="icon-linkedIn item media" src="public/images/LinkedIn.png" > 
+//-                     </a>
+//-                 </div>
+//-                 <div class="facebook item">
+//-                     <a href="https://www.facebook.com/caleb.sanders.773" target="_blank">
+//-                         <img class="icon-facebook item media" src="public/images/Facebook.png" > 
+//-                     </a>
+//-                 </div>
+//-                 <div class="twitter item">
+//-                     <a href="https://twitter.com/CalebSanders287" target="_blank">
+//-                         <img class="icon-twitter item media" src="public/images/Twitter.png" > 
+//-                     </a>
+//-                 </div>
+//-                 <div class="instagram item">
+//-                     <a href="https://www.instagram.com/caleb_sanders97/" target="_blank">
+//-                         <img class="icon-instagram item media" src="public/images/Instagram.png" > 
+//-                     </a>
+//-                 </div>
+//-             </div>
+//-         </div>
+//-     </footer>
+//- </html>
+extends layout
+
+block content 
+    div.greeting.item
+        h1.item Hello! My name is Caleb Sanders
+        div.profile-pic.item
+            img.pic.item(src="/images/profile.JPG")
+    div.description.item
+        h3 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

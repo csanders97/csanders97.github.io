@@ -5,9 +5,9 @@ body {
     max-width: 100%;
 }
 
-/* .item {
+.item {
     border: 1px solid #20b9b9;
-} */
+}
 
 .c-nav ul, .c-nav-link ul {
     list-style-type: none;

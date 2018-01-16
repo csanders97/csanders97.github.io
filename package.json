@@ -1,0 +1,23 @@
+{
+  "name": "csanders97.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csanders97/csanders97.github.io.git"
+  },
+  "author": "csanders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csanders97/csanders97.github.io/issues"
+  },
+  "homepage": "https://github.com/csanders97/csanders97.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}

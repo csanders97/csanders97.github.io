@@ -1,0 +1,54 @@
+doctype
+html
+    head
+        title Caleb Sanders - Portfilio
+        link(href='/style/main.css', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Acme|Ubuntu+Condensed', rel='stylesheet')
+        div.c-navigation.item
+            h1.title-card.item CSS Original
+            nav.c-nav.item
+                ul
+                    li.c-link.item
+                        a(href="home") Home
+                    li.c-link.item
+                        a(href="#") About
+                    li.c-link.item
+                        a(href="work") Work
+                    li.c-link.item
+                        a(href="#") Resume
+                    li.c-link.item
+                        a(href="#") Contact
+                ul
+            div.c-dropdown.item
+                button(onclick="dropDwn()" class="dropbtn")
+                    div.hamburger
+                    div.hamburger
+                    div.hamburger
+            div#Dropdown.dropdown-content
+                a(href="home") Home
+                a(href="#") About
+                a(href="work") Work
+                a(href="#") Resume
+                a(href="#") Contact
+    body
+        div.container.item
+            block content
+        script(src="/dropdown.js")
+    footer
+        hr
+        div.follow-me.item
+            h2 Follow me on social media!
+        div.social-media.item
+            div.social-media-icons.item
+                div.linkedIn.item
+                    a(href="https://www.linkedin.com/in/caleb-sanders-wd/" target="_blank")
+                        img.icon-linkedIn.media(src="/images/LinkedIn.png")
+                div.facebook.item
+                    a(href="https://www.facebook.com/caleb.sanders.773" target="_blank")
+                        img.icon-facebook.media(src="/images/Facebook.png")
+                div.twitter.item
+                    a(href="https://twitter.com/CalebSanders287" target="_blank")
+                        img.icon-twitter.media(src="/images/Twitter.png")
+                div.instagram.item
+                    a(href="https://www.instagram.com/caleb_sanders97/" target="_blank")
+                        img.icon-instagram.media(src="/images/Instagram.png") 
