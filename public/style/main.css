@@ -5,6 +5,10 @@ body {
     max-width: 100%;
 }
 
+/* html {
+  background: linear-gradient(150deg, #292929 30%, #464747 40%, #3c3e3f 50%); 
+} */
+
 .item {
     border: 1px solid #20b9b9;
 }
@@ -160,6 +164,43 @@ body {
     padding: 10px;
     text-align: left;
     flex: .9;
+    text-shadow: 0 0 20px #38b6ff;
+  }
+
+  .top-three, .other-projects {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px #38b6ff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .project-showcase, .other-project-showcase {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .capstone-project, .activity-hunt, .talon-project {
+    display: flex;
+    flex-direction: column;
+    flex: .333;
+    padding: 10px;
+  }
+
+  .spoof-project, .pizza-lab, .coat-of-arms {
+    display: flex;
+    flex-direction: column;
+    flex: .333;
+    padding: 10px;
+  }
+
+  .desc {
+    padding: 10px;
+    text-align: center;
+    color: white;
     text-shadow: 0 0 20px #38b6ff;
   }
 
