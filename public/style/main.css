@@ -9,9 +9,9 @@ body {
   background: linear-gradient(150deg, #292929 30%, #464747 40%, #3c3e3f 50%); 
 } */
 
-.item {
+/* .item {
     border: 1px solid #20b9b9;
-}
+} */
 
 .c-nav ul, .c-nav-link ul {
     list-style-type: none;
@@ -143,6 +143,35 @@ body {
     display: block;
   }
 
+  .work-images {
+    max-width: 75%;
+    box-shadow: 0 0 20px #d9e9f3;
+  }
+
+  .ffhc-image, .talon-project, .activity-hunt, .pizza-lab-image {
+    position: relative;
+    z-index: 1;
+  }
+
+  .ffhc-image img, .talon-project img, .activity-hunt img, .pizza-lab-image img {
+    transition: opacity .6s;
+  }
+
+  .ffhc-image img:hover, .talon-project img:hover, .activity-hunt img:hover, .pizza-lab-image img:hover {
+    opacity: 0.15;
+    z-index: -2;
+  }
+
+  .work-desc {
+    color: white;
+    text-shadow: 0 0 20px #38b6ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
   .container {
     max-width: 90%;
     text-align: center;
@@ -168,7 +197,6 @@ body {
   }
 
   .top-three, .other-projects {
-    padding: 10px;
     text-align: center;
     color: white;
     text-shadow: 0 0 20px #38b6ff;
@@ -183,18 +211,20 @@ body {
     flex: 1;
   }
 
+  .project-showcase h3, .other-project-showcase h3 {
+    text-align: left;
+  }
+
   .capstone-project, .activity-hunt, .talon-project {
     display: flex;
     flex-direction: column;
     flex: .333;
-    padding: 10px;
   }
 
   .spoof-project, .pizza-lab, .coat-of-arms {
     display: flex;
     flex-direction: column;
     flex: .333;
-    padding: 10px;
   }
 
   .desc {
@@ -211,11 +241,10 @@ body {
   }
 
   .pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
+    max-width: 100%; 
+    border-radius: 50px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     border: 2px solid #0297ee;
     box-shadow: 0 4px 8px 0 #38b6ff, 0 6px 20px 0 #38b6ff;
   }
