@@ -1,5 +1,3 @@
-var express = require('express');
-
 exports.home = function(req, res) {
     res.render('home');
 }
@@ -18,5 +16,8 @@ exports.resume = function(req, res) {
 
 exports.contact = function(req, res) {
     res.render('contact');
-    console.log("Tester");
+}
+
+exports.project = function(req, res) {
+    res.render('project');
 }

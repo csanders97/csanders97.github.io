@@ -5,20 +5,23 @@ html
         link(href='/style/main.css', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Acme|Ubuntu+Condensed', rel='stylesheet')
         div.c-navigation.item
-            h1.title-card.item CSS Original
+            div.title-card.item
+                img.full-logo.item(src="images/1x/CSS Logov2.png")
+                //img.full-logo.item(src="images/CSS Logo.png")
             nav.c-nav.item
-                ul
-                    li.c-link.item
-                        a(href="/") Home
-                    li.c-link.item
-                        a(href="about") About
-                    li.c-link.item
-                        a(href="work") Work
-                    li.c-link.item
-                        a(href="resume") Resume
-                    li.c-link.item
-                        a(href="contact") Contact
-                ul
+                div.c-nav-items.item
+                    ul
+                        li.c-link.item
+                            a(href="/") Home
+                        li.c-link.item
+                            a(href="about") About
+                        li.c-link.item
+                            a(href="work") Work
+                        li.c-link.item
+                            a(href="resume") Resume
+                        li.c-link.item
+                            a(href="contact") Contact
+                    ul
             div.c-dropdown.item
                 button(onclick="dropDwn()" class="dropbtn")
                     div.hamburger
@@ -34,6 +37,7 @@ html
         div.container.item
             block content
         script(src="/dropdown.js")
+        script(src="/project-click.js")
     footer
         hr
         div.follow-me.item

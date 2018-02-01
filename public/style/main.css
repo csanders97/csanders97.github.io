@@ -38,6 +38,10 @@ body {
     text-decoration: none; 
     font-family: 'Acme', sans-serif;
   }
+
+  .c-nav-items {
+    margin: 0 auto;
+  }
   
   .c-navigation {
     height: 80px;
@@ -49,16 +53,20 @@ body {
   }
 
   .title-card {
-    flex: .5;
+    flex: .3;
     text-align: center;
     color: white;
     font-family: 'Acme', sans-serif;
   }
 
+  .full-logo {
+    max-width: 20%;
+  }
+
   .c-nav {
     display: flex;
     flex-direction: row;
-    flex: .5;
+    flex: .7;
   }
 
   .c-nav, .c-nav-link {
@@ -172,12 +180,12 @@ body {
 
   .work-desc {
     color: white;
-    text-shadow: 0 0 20px #38b6ff;
+    /* text-shadow: 0 0 20px #38b6ff; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: -1;
   }
 
   .container {
@@ -201,16 +209,20 @@ body {
     padding: 10px;
     text-align: left;
     flex: .9;
-    text-shadow: 0 0 20px #38b6ff;
+    /* text-shadow: 0 0 20px #38b6ff; */
   }
 
   .top-three, .other-projects {
     text-align: center;
     color: white;
-    text-shadow: 0 0 20px #38b6ff;
+    /* text-shadow: 0 0 20px #38b6ff; */
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+
+  .top-three {
+    margin: 20px;
   }
 
   .project-showcase, .other-project-showcase {
@@ -239,7 +251,7 @@ body {
     padding: 10px;
     text-align: center;
     color: white;
-    text-shadow: 0 0 20px #38b6ff;
+    /* text-shadow: 0 0 20px #38b6ff; */
   }
 
   .profile-pic {
@@ -262,7 +274,7 @@ body {
     text-align: left;
     font-size: 25px;
     font-family: 'Ubuntu Condensed', sans-serif;
-    text-shadow: 0 0 10px #38b6ff;
+    /* text-shadow: 0 0 10px #38b6ff; */
   }
 
   .description h3 {
@@ -301,7 +313,7 @@ body {
     color: white;
     text-align: center;
     font-family: 'Ubuntu Condensed', sans-serif;
-    text-shadow: 0 0 50px #38b6ff;
+    /* text-shadow: 0 0 50px #38b6ff; */
   }
 
   .media {

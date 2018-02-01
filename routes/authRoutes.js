@@ -11,4 +11,6 @@ module.exports = (app) => {
     app.get('/resume', route.resume);
 
     app.get('/contact', route.contact);
+
+    app.get('/project', route.project);
 }
