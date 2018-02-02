@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+        <title>Build your own Pizza!</title>
+    </head>
+    <body ng-app="createPizza" ng-controller="mainController">
+        <div class="container item">
+            <div class="header item">
+                <div class="logo item">
+                    
+                </div>
+                <div class="title item">
+                    <h1>Build Your Own Pizza</h1>
+                </div>
+                <div class="price item">
+                    <h1>Total: ${{total}}</h1>
+                </div>
+            </div>
+            <div class="main-content item">
+                <div class="pizza-content item">
+                    <div class="pizza-upper item">
+                        <div class="pizza-image item" id="pizza-image">
+                            <img class="pizza" src="images/pizza-images/blank.png"/>
+                            <img ng-repeat="topping in pizza.availToppings" class="toppingLeft {{topping.id}}" src="{{topping.images[0]}}">
+                            <img ng-repeat="topping in pizza.availToppings" class="toppingRight {{topping.id}}" src="{{topping.images[1]}}">
+                            <div class="label">
+                                <h2>Special Deal!</h2>
+                            </div>
+                        </div>
+                        <div class="pizza-options item">
+                            <div class="size-option item">
+                                <h3>Pizza Sizes:</h3>
+                                <input type="radio" class="size" value="Small" id="small" ng-model="pizzaSize" ng-click="addSize()">Small
+                                <br />
+                                <input type="radio" class="size" value="Medium" id="medium" ng-model="pizzaSize" ng-click="addSize()">Medium
+                                <br />
+                                <input type="radio" class="size" value="Large" id="large" ng-model="pizzaSize" ng-click="addSize()">Large
+                                <br />
+                                <input type="radio" class="size" value="X-Large" id="X-Large" ng-model="pizzaSize" ng-click="addSize()">X-Large
+                            </div>
+                            <div class="premade-option item">
+                                <h3>Premade Pizza:</h3>
+                                <input type="radio" class="premade" name="premade" value="Pep" id="pepp" ng-model="premadePizza" ng-click="addPremade()">Pepperoni
+                                <br />
+                                <input type="radio" class="premade" name="premade" value="Hawaii" id="hawaii" ng-model="premadePizza" ng-click="addPremade()">Hawaiian
+                                <br />
+                                <input type="radio" class="premade" name="premade" value="Meat" id="meat" ng-model="premadePizza" ng-click="addPremade()">Meat Lovers
+                                <br />
+                                <input type="radio" class="premade" name="premade" value="PeppAndSaus"id="peppAndSaus" ng-model="premadePizza" ng-click="addPremade()">Pepperoni + Sausage
+                                <br />
+                                <input type="radio" class="premade" name="premade" value="P.P.J" id="p.p.j" ng-model="premadePizza" ng-click="addPremade()">P.P.J
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pizza-lower item">
+                        <div class="pizza-toppings">
+                            <button type="button" class="pizzaTopping item" ng-model="pizzaToppings" ng-repeat="topping in pizza.availToppings" ng-click="checkForTopping(topping)" id="{{topping.id}}">{{topping.name}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-content item">
+                    <div class="order-summary item">
+                        <h2>Order Summary</h2>
+                        <table>
+                            <tr class="sizeSummary">
+                                <td ng-repeat="size in sizes"><h4>{{size.size}} Pizza:</h4></td>
+                                <td ng-repeat="price in price"><h4>${{price.cost}}</h4></td>
+                            </tr>
+                        </table>
+                        <div class="toppingSummary" ng-repeat="topping in fullTop">
+                            <p>{{topping.topping.topping}}: ${{topping.cost.cost}}</p>
+                        </div>
+                    </div>
+                    <div class="order-submit item">
+                        <button id="add" class="addOrder">Add to Order</button>
+                        <div id="orderModal" class="modal">
+                            <div class="content">
+                                <span class="close">&times;</span>
+                                <p>Order has been placed!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="pizza-script.js"></script>
+    </body>
+</html>

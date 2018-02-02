@@ -222,7 +222,8 @@ body {
   }
 
   .top-three {
-    margin: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
   }
 
   .project-showcase, .other-project-showcase {

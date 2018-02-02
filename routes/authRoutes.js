@@ -13,4 +13,6 @@ module.exports = (app) => {
     app.get('/contact', route.contact);
 
     app.get('/project', route.project);
+
+    app.get('/pizza', route.pizza);
 }

@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/csanders97/csanders97.github.io#readme",
   "dependencies": {
+    "consolidate": "^0.15.0",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "node-sass": "^4.7.2",
     "pug": "^2.0.0-rc.4"

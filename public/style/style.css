@@ -1,0 +1,320 @@
+h1, h2, h3, h4, p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+html{
+    background-image: url("../images/pizza-images/woodBackground.jpg");
+}
+
+.item {
+    border: 2px solid black;
+}
+
+.logo {
+    flex: .1;
+} 
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    flex: .6;
+    text-align: center;
+}
+
+.pizza {
+    max-width: 13%;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.price {
+    flex: .3;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #e31837;
+    opacity: 0.8;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.pizza-content {
+    display: flex;
+    flex-direction: column;
+    flex: .8;
+}
+
+.pizza-upper {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    background-color: #006491;
+    opacity: 0.8;
+}
+
+.pizza-image {
+    padding: 10px;
+    margin: 10px;
+    flex: .3;
+}
+
+.pizza-toppings {
+    text-align: center;
+}
+
+.toppingLeft{
+    max-width: 7%;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+.toppingRight{
+    max-width: 7%;
+    padding-left: 100px;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+.pizza-options {
+    display: flex;
+    flex-direction: row;
+    flex: .7;
+}
+
+.size-option {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    flex: .5;
+}
+
+.premade-option {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    flex: .5;
+    
+}
+
+.pizza-lower {
+    column-count: 4;
+    column-gap: 40px;
+    padding: 40px;
+    background-color: #e31837;
+    opacity: 0.8;
+    height: 210px;
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: column;
+    flex: .2;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.order-summary {
+    text-align: center;
+    height: 500px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.order-submit {
+    padding: 10px;
+    margin: 10px;
+    background-color: #e31837;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.label {
+    display: none;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #e31837; 
+    background-color: #006491; 
+}
+
+.content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #006491;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 1000px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sizeSummary {
+        justify-content: center;
+    }
+
+    .toppingSummary {
+        column-count: 4;
+    }
+
+    .pizza {
+        max-width: 20%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .order-summary {
+        height: 200px;
+    }
+
+    .toppingLeft{
+        max-width: 11%;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+    }
+    .toppingRight{
+        max-width: 11%;
+        padding-left: 60px;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 750px) {
+    .container {
+        width: 100%;
+    }
+
+    .pizza {
+        max-width: 25%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .pizza-upper {
+        flex-direction: column;
+        height: 500px;
+    }
+    .toppingLeft{
+        max-width: 14%;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+    }
+    .toppingRight{
+        max-width: 14%;
+        padding-left: 60px;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 575px) {
+    html {
+        min-width: 500px;
+    }
+    
+    .title {
+        font-size: 13px;
+    }
+
+    .pizza {
+        max-width: 30%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .pizza-upper {
+        height: 500px;
+    }
+
+    .pizza-options {
+        height: 500px;
+    }
+    .toppingLeft{
+        max-width: 16%;
+        z-index: 1;
+        padding-left: 10px;
+        position: absolute;
+        text-align: center;
+    }
+    .toppingRight{
+        max-width: 16%;
+        padding-left: 60px;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+    }
+}
+
+.pizzaTopping{
+    text-align: center;
+    padding: 15px;
+    background-color: #ccc;
+    color: black;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.addOrder{
+    text-align: center;
+    padding: 15px;
+    background-color: #ccc;
+    color: black;
+    border-radius: 15px;
+}

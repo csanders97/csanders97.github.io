@@ -21,3 +21,7 @@ exports.contact = function(req, res) {
 exports.project = function(req, res) {
     res.render('project');
 }
+
+exports.pizza = function(req, res) {
+    res.render('pizza-project/pizza.html');
+}
