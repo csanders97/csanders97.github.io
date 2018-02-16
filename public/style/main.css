@@ -50,6 +50,7 @@ body {
     flex-direction: row;
     box-shadow: 0 4px 8px 0 #38b6ff, 0 6px 20px 0 #38b6ff;
     border-radius: 20px;
+    justify-content: space-between
   }
 
   .title-card {
@@ -107,8 +108,11 @@ body {
     top: 20px;
     margin: 10px;
     padding-right: 10%;
-    display: none; 
     justify-content: flex-end;
+  }
+
+  .c-dropdown {
+    display: none; 
   }
   
   .c-dropdown .dropbtn {
@@ -121,6 +125,23 @@ body {
   }
   
   .c-dropdown .dropbtn .hamburger {
+    width: 30px;
+    height: 2px;
+    background-color: white; 
+    margin: 6px 0;
+    border: none; 
+  }
+
+  .c-dropdown-home .dropbtn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent; 
+  }
+  
+  .c-dropdown-home .dropbtn .hamburger {
     width: 30px;
     height: 2px;
     background-color: white; 
@@ -157,6 +178,10 @@ body {
     box-shadow: 0 0 20px #d9e9f3;
   }
 
+  .work-overview, .top-three, .other-projects {
+    font-family: 'Acme', 'san-serif';
+  }
+
   .ffhc-image, .talon-project, .activity-hunt, .pizza-lab-image, .boreo-image, .tic-tac-toe-image {
     position: relative;
     z-index: 1;
@@ -177,6 +202,10 @@ body {
 
   .tic-tac-toe-image img {
     max-width: 35%;
+  }
+
+  .tic-tac-toe-image p {
+    padding: 50px;
   }
 
   .work-desc {
@@ -236,6 +265,7 @@ body {
 
   .project-showcase h3, .other-project-showcase h3 {
     text-align: left;
+    font-family: 'Acme', 'san-serif';
   }
 
   .capstone-project, .activity-hunt, .talon-project {
