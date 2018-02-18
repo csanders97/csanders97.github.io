@@ -114,7 +114,10 @@ html{
     padding: 20px;
     margin: 5px;
     flex: .5;
-    
+}
+
+.premade {
+    cursor: pointer;
 }
 
 .pizza-lower {
@@ -310,6 +313,7 @@ html{
     border-radius: 15px;
     width: 100%;
     margin: 10px;
+    cursor: pointer;
 }
 
 .addOrder{

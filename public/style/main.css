@@ -194,6 +194,7 @@ body {
   .ffhc-image img:hover, .talon-project img:hover, .activity-hunt img:hover, .pizza-lab-image img:hover, .boreo-image img:hover, .tic-tac-toe-image img:hover {
     opacity: 0.15;
     z-index: -2;
+    cursor: pointer;
   }
 
   .boreo-image img {
