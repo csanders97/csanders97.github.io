@@ -1,3 +1,31 @@
 extends layout
 
 block content
+    div.title.item
+        div.page-description.item
+            h2.contact-desc Please fill out the form below with any questions and/or concerns.
+            h2.contact-desc Whether it'd be regarding the business or any issues that you have found with the website!
+    div.contact-info.item
+        div.contact-form.item
+            form.contact-data.item(method="post" action="/contact" id="send")
+                input(class="name" type="text" name="name" value="" placeholder="Your Name")
+                br
+                textarea(name="message" type="text" value="" cols="65" rows="2" form="send" placeholder="Message Here")
+                br
+                input(class="submit" type="submit" value="Submit")
+        div.contact-us.item
+            div.comp-name-field.item
+                div.comp-name-icon.item
+                    i.fas.fa-map-marker(aria-hidden='true') 
+                div.comp-name-title.item
+                    h3 Caleb Sanders
+            div.comp-phone-field.item
+                div.comp-phone-icon.item
+                    i.fas.fa-phone(aria-hidden='true') 
+                div.comp-phone-title.item
+                    h3 (530) 526-9189
+            div.comp-email-field.item
+                div.comp-email-icon.item
+                    i.fas.fa-envelope(aria-hidden='true') 
+                div.comp-email-title.item
+                    h3 97caleb.sanders@gmail.com

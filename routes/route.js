@@ -18,6 +18,12 @@ exports.contact = function(req, res) {
     res.render('contact');
 }
 
+exports.sendMessage = function(req, res) {
+    console.log(req.body.name);
+    console.log(req.body.message);
+    res.redirect('/');
+}
+
 exports.project = function(req, res) {
     res.render('project');
 }

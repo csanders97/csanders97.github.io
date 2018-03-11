@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(150deg, #292929 30%, #464747 40%, #3c3e3f 50%); 
+    background: linear-gradient(150deg, #292929 20%, #464747 40%, #3c3e3f 50%); 
     opacity: 0.95;
     max-height: 100%;
     max-width: 100%;
@@ -124,13 +124,13 @@ body {
     background: transparent; 
   }
   
-  .c-dropdown .dropbtn .hamburger {
+  /* .c-dropdown .dropbtn .hamburger {
     width: 30px;
     height: 2px;
     background-color: white; 
     margin: 6px 0;
     border: none; 
-  }
+  } */
 
   .c-dropdown-home .dropbtn {
     padding: 10px;
@@ -359,6 +359,92 @@ body {
     width: 75px;
   }
 
+  .contact-desc {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Acme', 'san-serif';
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    flex: .8;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .contact-form * {
+    padding: 15px;
+  }
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    flex: .4;
+  }
+
+  .contact-us * {
+    padding: 10px;
+  }
+
+  .comp-name-field {
+    display: flex;
+    flex-direction: row;
+    flex: .3;
+  }
+  
+  .comp-phone-field {
+    display: flex;
+    flex-direction: row;
+    flex: .2;
+  }
+  
+  .comp-email-field {
+    display: flex;
+    flex-direction: row;
+    flex: .2;
+  }
+  
+  .comp-name-icon, .comp-email-icon, .comp-phone-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .comp-name-title, .comp-email-title, .comp-phone-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    font-family: 'Acme', 'san-serif';
+    color: white;
+  }
+
+  .name, .message {
+    width: 50%;
+    margin: 10px;
+    height: 15px;
+  }
+
+  .submit {
+    padding: 10px;
+    margin: 30px;
+  }
+
+  .message {
+    resize: both;
+  }
+
   @media all and (max-width: 1484px) {
     .greeting {
       flex-direction: column-reverse;
@@ -380,6 +466,10 @@ body {
 
     .greeting h1 {
       float: left;
+    }
+
+    .contact-info {
+      flex-direction: column-reverse;
     }
   }
 
