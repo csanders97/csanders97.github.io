@@ -24,7 +24,6 @@ exports.contact = function(req, res) {
 exports.sendMessage = function(req, res) {
     var name = req.body.name;
     var message = req.body.message;
-    console.log(req.body.message);
     var transporter = mail.createTransport({
         service: 'gmail',
         auth: {
@@ -36,7 +35,7 @@ exports.sendMessage = function(req, res) {
         from: keys.EMAIL,
         to: keys.EMAIL,
         subject: 'Caleb Sanders | Full-Stack Developer: Portfolio Comments',
-        text: 'Greetings from ' + name + ' , /n ' + message
+        text: 'Greetings, \n\n' + '\t ' + message + '.\n\n Sincerely, \n' + name
     }; 
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
