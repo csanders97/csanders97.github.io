@@ -201,7 +201,6 @@ body {
 
 .work-desc {
   color: white;
-  /* text-shadow: 0 0 20px #38b6ff; */
   position: absolute;
   top: 35%;
   left: 50%;
@@ -231,13 +230,11 @@ body {
   padding: 10px;
   text-align: left;
   flex: .9;
-  /* text-shadow: 0 0 20px #38b6ff; */
 }
 
 .top-three, .other-projects {
   text-align: center;
   color: white;
-  /* text-shadow: 0 0 20px #38b6ff; */
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -500,6 +497,18 @@ hr {
 .submit {
   padding: 5px;
   margin: 15px;
+  background-color: #38b6ff;
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  height: 35px;
+}
+
+.submit:hover {
+  background-color: #1f8dcc;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1560px) {
