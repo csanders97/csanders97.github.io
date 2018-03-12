@@ -2,8 +2,4 @@ extends layout
 
 block content
     div.resume-doc
-        p
-            button(onClick="loadworddoc();" value="Load")
-
-        p
-            textarea(name=myarea cols=50 rows=5) Nothing here yet
+        embed.pdf(src="/files/Resume.pdf")

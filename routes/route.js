@@ -1,3 +1,6 @@
+var mail = require('nodemailer'),
+    keys = require('../config/keys');
+
 exports.home = function(req, res) {
     res.render('home');
 }
@@ -19,8 +22,30 @@ exports.contact = function(req, res) {
 }
 
 exports.sendMessage = function(req, res) {
-    console.log(req.body.name);
+    var name = req.body.name;
+    var message = req.body.message;
     console.log(req.body.message);
+    var transporter = mail.createTransport({
+        service: 'gmail',
+        auth: {
+            user: keys.EMAIL,
+            pass: keys.PASS
+        }
+    });
+    var mailOptions = {
+        from: keys.EMAIL,
+        to: keys.EMAIL,
+        subject: 'Caleb Sanders | Full-Stack Developer: Portfolio Comments',
+        text: 'Greetings from ' + name + ' , /n ' + message
+    }; 
+    transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.redirect('/admin');
+        }
+    });
     res.redirect('/');
 }
 

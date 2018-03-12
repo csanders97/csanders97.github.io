@@ -2,6 +2,7 @@ var express = require('express'),
     pug = require('pug'),
     route = require('./routes/route'),
     path = require('path'),
+    keys = require('./config/keys'),
     consolidate = require('consolidate');
 
 var app = express();

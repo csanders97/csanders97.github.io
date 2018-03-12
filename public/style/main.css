@@ -359,6 +359,12 @@ body {
     width: 75px;
   }
 
+  .pdf {
+    width: 900px;
+    height: 750px;
+    text-align: center;
+  }
+
   .contact-desc {
     padding: 10px;
     margin: 5px;
@@ -382,7 +388,8 @@ body {
   }
 
   .contact-form * {
-    padding: 15px;
+    padding: 10px;
+    margin: 15px;
   }
   
   .contact-us {
@@ -437,12 +444,14 @@ body {
   }
 
   .submit {
-    padding: 10px;
-    margin: 30px;
+    padding: 5px;
+    margin: 15px;
   }
 
-  .message {
-    resize: both;
+  @media all and (max-width: 1560px) {
+    .full-logo {
+      max-width: 30%;
+    }
   }
 
   @media all and (max-width: 1484px) {
@@ -471,6 +480,10 @@ body {
     .contact-info {
       flex-direction: column-reverse;
     }
+
+    .full-logo {
+      max-width: 45%;
+    }
   }
 
   @media all and (max-width: 950px) {
@@ -494,5 +507,9 @@ body {
 
     .full-logo {
       max-width: 60%;
+    }
+
+    .pdf {
+      width: 750px;
     }
   }
