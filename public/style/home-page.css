@@ -149,7 +149,12 @@ body {
     max-width: 100%; 
     text-align: center;
     margin: 0 auto; 
-} 
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+}
 
 .top-intro {
     position: absolute;
@@ -182,8 +187,8 @@ body {
 }
 
 .media {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     padding: 15px;
 }
 
@@ -224,3 +229,39 @@ body {
         max-width: 50%;
     }
 }
+
+@media all and (max-width: 400px) {
+    .full-logo {
+      max-width: 150%;
+      padding: 5% 0 0 5%;
+    }
+
+    .home-text {
+      top: 40%;
+    }
+
+    .entire-logo {
+        position: relative;
+        max-width: 50%;
+    }
+
+    .top-intro {
+        top: 25%;
+        left: 25%;
+    }
+
+    .intro {
+        font-size: 35px;
+    }
+
+    .media {
+        height: 45px;
+        width: 45px;
+        padding: 10px;
+    }
+
+    .social-media {
+        margin-top: 25%;
+        padding-top: 20%;
+    }
+  }
