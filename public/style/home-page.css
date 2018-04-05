@@ -5,6 +5,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .c-nav ul, .c-nav-link ul {
@@ -46,7 +47,7 @@ body {
 }
 
 .full-logo {
-    max-width: 25%;
+    max-width: 30%;
 }
 
 .c-nav {
@@ -154,18 +155,18 @@ body {
 .home-text {
     display: flex;
     flex-direction: column;
-}
-
-.top-intro {
     position: absolute;
-    top: 35%;
-    right: 35%;
+    top: 15%;
+    right: 14%;
 }
 
 .my-logo {
-    position: absolute;
-    top: 10%;
-    right: 5%;
+    max-width: 90%;
+}
+
+.top-intro {
+    font-size: 45px;
+    text-align: left;
 }
 
 .intro {
@@ -176,56 +177,39 @@ body {
 
 .entire-logo {
     max-width: 100%;
-    top: 40%;
 }
 
 .footer-temp {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 2%;
 }
 
 .media {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     padding: 15px;
 }
 
 @media all and (max-width: 1480px) {
-    .top-intro {
-        top: 35%;
-        right: 25%;
-    }
-
     .full-logo {
         max-width: 35%;
     }
 
     .entire-logo {
-        max-width: 75%;
+        max-width: 70%;
     }
 }
 
 @media all and (max-width: 1240px) {
-    .top-intro {
-        top: 35%;
-        right: 10%;
-    }
-
     .intro {
         font-size: 45px;
     }
 }
 
 @media all and (max-width: 1040px) {
-    .top-intro {
-        top: 35%;
-        right: 0%;
-        padding: 20px;
-    }
-
     .full-logo {
         max-width: 50%;
     }
@@ -235,20 +219,6 @@ body {
     .full-logo {
       max-width: 150%;
       padding: 5% 0 0 5%;
-    }
-
-    .home-text {
-      top: 40%;
-    }
-
-    .entire-logo {
-        position: relative;
-        max-width: 50%;
-    }
-
-    .top-intro {
-        top: 25%;
-        left: 25%;
     }
 
     .intro {
@@ -265,4 +235,90 @@ body {
         margin-top: 25%;
         padding-top: 20%;
     }
-  }
+}
+
+@media all and (max-width: 411px) {
+    .full-logo {
+        max-width: 20%;
+    }
+    
+    .home-text {
+        top: 80%;
+    }
+
+    .my-logo {
+        max-width: 10%;
+    }
+
+    .top-intro {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .full-logo {
+        max-width: 80%;
+        padding-left: 10px;
+    }
+
+    .hamburger {
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+    }
+
+    .home-text {
+        left: 60%;
+        top: 20%;
+    }
+
+    .my-logo {
+        max-width: 100%;
+    }
+
+    .entire-logo {
+        max-width: 80%;
+    }
+
+    .intro {
+        font-size: 25px;
+    }
+    
+    .media {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .full-logo {
+        max-width: 100%;
+    }
+
+    .home-text {
+        left: 3%;
+        top: 15%;
+    }
+
+    .entire-logo {
+        max-width: 40%;
+    }
+
+    .top-intro {
+        padding: 15px;
+    }
+
+    .intro {
+        font-size: 25px;
+    }
+
+    .media {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-temp {
+        top: 50%;
+        left: 10%;
+    }
+}
