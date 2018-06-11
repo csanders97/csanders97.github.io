@@ -1,5 +1,5 @@
 function ffhcLink() {
-    window.location.href = 'https://ffhc.herokuapp.com/';
+    window.open('https://ffhc.herokuapp.com/', '_blank');
 }
 
 function pizzaTime() {
@@ -7,5 +7,5 @@ function pizzaTime() {
     var data = [];
     data = url.split('/');
     newLink = data[0] + "/pizza";
-    window.location.href = newLink;
+    window.open(newLink, '_blank');
 }
