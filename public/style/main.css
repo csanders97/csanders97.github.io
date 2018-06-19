@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(150deg, #292929 20%, #464747 40%, #3c3e3f 50%); 
+  background: linear-gradient(150deg, #3b3b3b 20%, #505252 40%, #4b4d4e 50%); 
   opacity: 0.95;
   max-height: 100%;
   max-width: 100%;
@@ -167,7 +167,6 @@ body {
 }
 
 .work-images {
-  max-width: 25%;
   box-shadow: 0 0 20px #d9e9f3;
   flex: .5;
 }
@@ -175,21 +174,6 @@ body {
 .top-three, .other-projects {
   font-family: 'Acme', 'san-serif';
 }
-
-/* .ffhc-image, .talon-project, .activity-hunt, .pizza-lab-image, .boreo-image, .tic-tac-toe-image {
-  position: relative;
-  z-index: 1;
-}
-
-.ffhc-image img, .talon-project img, .activity-hunt img, .pizza-lab-image img, .boreo-image img, .tic-tac-toe-image img {
-  transition: opacity .6s;
-}
-
-.ffhc-image img:hover, .talon-project img:hover, .activity-hunt img:hover, .pizza-lab-image img:hover, .boreo-image img:hover, .tic-tac-toe-image img:hover {
-  opacity: 0.15;
-  z-index: -2;
-  cursor: pointer;
-} */
 
 .boreo-image img {
   max-width: 60%;
@@ -207,12 +191,19 @@ body {
   display: flex;
   flex-direction: row;
   flex: 1;
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.soon {
+  flex: .5;
 }
 
 .work-desc {
   color: white;
   flex: .5;
   font-size: 20px;
+  text-align: center;
 }
 
 .container {
@@ -246,8 +237,8 @@ body {
   flex: 1;
 }
 
-.top-three {
-  margin-bottom: 20px;
+.top-three, .other-projects {
+  margin-bottom: 10px;
   padding: 20px;
 }
 
@@ -264,17 +255,15 @@ body {
   font-family: 'Acme', 'san-serif';
 }
 
-.capstone-project, .activity-hunt, .talon-project {
+/* .capstone-project, .activity-hunt, .talon-project {
   display: flex;
-  flex-direction: column;
-  flex: .333;
-}
+  flex-direction: row;
+} */
 
-.spoof-project, .pizza-lab, .tic-tac-toe {
+/* .spoof-project, .pizza-lab, .tic-tac-toe {
   display: flex;
-  flex-direction: column;
-  flex: .333;
-}
+  flex-direction: row;
+} */
 
 .desc {
   padding: 10px;
@@ -310,8 +299,8 @@ body {
 
 hr {
   display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
